@@ -70,6 +70,8 @@
     <Content Include="css\style.css" />
     <Content Include="forget.html" />
     <Content Include="homepage.html" />
+    <Content Include="verify.html" />
+    <Content Include="newpass.html" />
     <Content Include="profile.html" />
     <Content Include="images\ava1.jpg" />
     <Content Include="images\banner1.png" />

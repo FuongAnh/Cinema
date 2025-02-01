@@ -365,11 +365,11 @@ header a{
 
 /*LOGIN & LOGOUT*/
 .body_login {
-    background-image: url("../images/header2.jpg");
+/*    background-image: url("../images/header2.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: black;
 }
-
 
 .container {
     position: absolute; /*dùng absolute để k ảnh hưởng layout body tổng thể */
@@ -518,9 +518,121 @@ header a{
 
 /*FORGET PASS*/
 
+.forget-container {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forget-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.forget-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#email-phone, #new-password, #otp{
+    width: 280px;
+    height: 40px;
+}
+
+.forget-input-field.button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.forget-input-field.button input {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1; 
+}
+
+.forget-input-field.button .cancelbtn:hover {
+    background-color: darkred; 
+}
+
+.forget-input-field.button  input:hover {
+    background-color: #4db2ec; 
+}
+
+.forget-input-field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.forget-input-field input {
+        width: 100%;
+        padding: 10px 40px 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        font-size: 14px;
+        transition: border 0.3s ease;
+    }
+
+.forget-input-field input:focus {
+            border: 1px solid #007BFF;
+}
+
+.forget-input-field .icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+}
+
+
+.showHidePw {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+
+
+
+ Step Sections 
+.forget-form-step-1, .forget-form-step-2, .forget-form-step-3 {
+    display: block;
+}
+
+/*.forget-form-step-2, .forget-form-step-3 {
+    display: none;
+}*/
+
+
+
 
 /*PROFILE*/
-
 .body_profile{
     background-color: black;
 }
@@ -700,3 +812,5 @@ input[type="tel"]:focus {
 .credit a:hover {
     text-decoration: underline;
 }
+
+
